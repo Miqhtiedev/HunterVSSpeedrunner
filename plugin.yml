@@ -1,0 +1,18 @@
+name: HunterVSSpeedrunner
+main: miqhtie.huntervsspeedrunner.Main
+version: 1.0.0
+
+author: Miqhtie
+description: A custom Hunter vs Speedrunner plugin
+
+commands:
+  hunter:
+    description: Makes you a hunter!
+  speedrunner:
+    description: Makes you a speed runner!
+  listpeople:
+    description: Lists all Hunters/Speedrunners!
+  start:
+    description: Starts the game!
+  track:
+    description: Tracks speedrunners if you are a hunter
