@@ -16,3 +16,5 @@ commands:
     description: Starts the game!
   track:
     description: Tracks speedrunners if you are a hunter
+  teamates:
+    description: Tells you the location of your teamates

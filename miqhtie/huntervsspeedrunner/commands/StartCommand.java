@@ -24,6 +24,10 @@ public class StartCommand implements CommandExecutor {
             return true;
         }
 
+        if(!(commandSender.hasPermission("huntervsspeedrunner.start"))){
+            commandSender.sendMessage(ChatColor.RED + "Missing permissions for this command!");
+        }
+
         if(HVSManager.getGameBool()){
             commandSender.sendMessage(ChatColor.RED + "Game already active");
             return true;

@@ -23,10 +23,12 @@ public class Main extends JavaPlugin {
         new HunterCommand(this);
         new SpeedrunnerCommand(this);
         new StartCommand(this);
+        new TeamatesCommand(this);
 
         new MoveListener(this);
         new DeathListener(this);
         new TrackCommand(this);
+        new DamageListener(this);
 
         Tick tick = new Tick(this);
         tick.runTaskTimer(plugin, 0, 1);

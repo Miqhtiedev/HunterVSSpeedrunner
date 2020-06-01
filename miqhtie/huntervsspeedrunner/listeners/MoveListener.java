@@ -23,7 +23,6 @@ public class MoveListener implements Listener {
 
         else if(HVSManager.getGameBool() && !(HVSManager.getHunterCanMove())){
             event.setCancelled(true);
-            event.getPlayer().sendMessage(ChatColor.RED + "Stop Moving! You will be let free soon!");
         }
     }
 
