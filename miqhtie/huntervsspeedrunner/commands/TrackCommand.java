@@ -3,6 +3,7 @@ package miqhtie.huntervsspeedrunner.commands;
 import miqhtie.huntervsspeedrunner.HVSManager;
 import miqhtie.huntervsspeedrunner.Main;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -34,12 +35,12 @@ public class TrackCommand implements CommandExecutor {
             return true;
         }
 
-        commandSender.sendMessage("Location of speed runners---");
+        commandSender.sendMessage(ChatColor.YELLOW + "Location of speed runners---");
         for(String string : HVSManager.getSpeedrunners()){
             for(Player p : Bukkit.getOnlinePlayers()){
                 if(p.getDisplayName().equalsIgnoreCase(string)){
                     Location playerLocation = p.getLocation();
-                    commandSender.sendMessage(string + "'s location: X:" + playerLocation.getBlockX() + " Z:" + playerLocation.getBlockZ());
+                    commandSender.sendMessage(ChatColor.GREEN + string + "'s location: X:" + playerLocation.getBlockX() + " Z:" + playerLocation.getBlockZ());
                 }
             }
         }

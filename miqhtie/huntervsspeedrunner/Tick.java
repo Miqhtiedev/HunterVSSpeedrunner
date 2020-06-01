@@ -1,6 +1,7 @@
 package miqhtie.huntervsspeedrunner;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
@@ -26,7 +27,7 @@ public class Tick extends BukkitRunnable {
                     HVSManager.setHunterCanMove(true);
 
                     for(Player p : Bukkit.getOnlinePlayers()){
-                        p.sendTitle("HUNTERS!", "HAVE BEEN RELEASED.", 1, 20, 1);
+                        p.sendTitle(ChatColor.RED + "HUNTERS!", ChatColor.DARK_RED + "HAVE BEEN RELEASED.", 1, 20, 1);
                     }
                     done = true;
                 }
