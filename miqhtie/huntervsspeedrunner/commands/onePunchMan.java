@@ -19,6 +19,7 @@ public class onePunchMan implements CommandExecutor {
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         if(HVSManager.getGameBool()){
             commandSender.sendMessage(ChatColor.RED + "Game already active!");
+            return true;
         }
         if(HVSManager.getOnePunchMan()){
             HVSManager.setOnePunchMan(false);
