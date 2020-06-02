@@ -4,7 +4,7 @@ A hunter vs speedrunner program inspired by the youtuber Dream!
 # Description
 Hunter VS Speedrunner. When the game is started the speed runners have one minute to run around the world before the hunters are released. The game ends when either the hunters kill all speed runners or when the speed runners kill the ender dragon. 
 
-# Commands:
+# Commands
 Hunter: Makes you a hunter 
 
 Speedrunner: Makes you a speed runner
