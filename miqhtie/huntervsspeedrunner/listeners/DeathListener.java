@@ -30,7 +30,7 @@ public class DeathListener implements Listener {
             Speedrunners.remove(event.getEntity().getDisplayName());
             HVSManager.setSpeedrunners(Speedrunners);
 //            event.getEntity().getWorld().strikeLightning(event.getEntity().getLocation());
-            Bukkit.broadcastMessage(ChatColor.RED + event.getEntity().getDisplayName() + " HAS BEEN MURDED!");
+            Bukkit.broadcastMessage(ChatColor.RED + event.getEntity().getDisplayName() + " HAS BEEN MURDERED!");
 
             if(HVSManager.getSpeedrunners().size() == 0){
                 Bukkit.broadcastMessage(ChatColor.GREEN + "HUNTERS WIN! Disabling plugin!");
