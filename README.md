@@ -16,3 +16,5 @@ Start: Starts the game
 Track: Command that hunters use when the game is started that displays the location of all speed runners.
 
 Teamates: Command that tells you all the locations of you teamates.
+
+Onepunch: Activates HARDCORE MODE. Hunters now ONE PUNCH speedrunners!

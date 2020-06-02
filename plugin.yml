@@ -18,3 +18,5 @@ commands:
     description: Tracks speedrunners if you are a hunter
   teamates:
     description: Tells you the location of your teamates
+  onepunch:
+    description: Activates 1pm mode. ALL HUNTERS ONE HIT SPEEDRUNNERS!

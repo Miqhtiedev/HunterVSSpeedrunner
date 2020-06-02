@@ -10,6 +10,7 @@ public class HVSManager {
 
     private static boolean gameActive;
     private static boolean hunterCanMove = true;
+    private static boolean onePunchMan;
 
     private static long timeStartedMilis;
 
@@ -23,6 +24,7 @@ public class HVSManager {
     public static boolean getGameBool(){
         return gameActive;
     }
+    public static boolean getOnePunchMan(){return onePunchMan;}
     public static ArrayList<String> getHunters(){
         return hunters;
     }
@@ -46,7 +48,7 @@ public class HVSManager {
     public static void setGameBool(Boolean bool){
         gameActive = bool;
     }
-
+    public static void setOnePunchMan(Boolean bool){onePunchMan = bool;}
     public static void setHunters(ArrayList<String> list){
         hunters = list;
     }

@@ -24,6 +24,7 @@ public class Main extends JavaPlugin {
         new SpeedrunnerCommand(this);
         new StartCommand(this);
         new TeamatesCommand(this);
+        new onePunchMan(this);
 
         new MoveListener(this);
         new DeathListener(this);
