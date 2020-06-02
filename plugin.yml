@@ -20,3 +20,5 @@ commands:
     description: Tells you the location of your teamates
   onepunch:
     description: Activates 1pm mode. ALL HUNTERS ONE HIT SPEEDRUNNERS!
+  quitteam:
+    description: If you are a hunter you are now not a hunter, if you are a speed runner you are now not a speed runner.
