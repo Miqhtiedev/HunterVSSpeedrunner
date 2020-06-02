@@ -23,7 +23,7 @@ public class DamageListener implements Listener{
             else if(HVSManager.getSpeedrunners().contains(((Player) event.getEntity()).getDisplayName()) && HVSManager.getSpeedrunners().contains(((Player) event.getDamager()).getDisplayName())){
                 event.setCancelled(true);
             }
-            else if(HVSManager.getGameBool() && HVSManager.getHunters().contains(((Player) event.getDamager()).getDisplayName())&& HVSManager.getSpeedrunners().contains(((Player) event.getEntity()).getDisplayName())){
+            else if(HVSManager.getGameBool() && HVSManager.getHunters().contains(((Player) event.getDamager()).getDisplayName())&& HVSManager.getSpeedrunners().contains(((Player) event.getEntity()).getDisplayName()) && HVSManager.getOnePunchMan()){
                 ((Player) event.getEntity()).setHealth(0);
                 event.getEntity().getWorld().strikeLightning(event.getEntity().getLocation());
             }
