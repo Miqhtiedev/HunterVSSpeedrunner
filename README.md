@@ -18,3 +18,5 @@ Track: Command that hunters use when the game is started that displays the locat
 Teamates: Command that tells you all the locations of you teamates.
 
 Onepunch: Activates HARDCORE MODE. Hunters now ONE PUNCH speedrunners!
+
+Quitteam: Takes you out of the current team (hunters or speedrunners).
