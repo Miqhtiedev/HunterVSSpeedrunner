@@ -11,7 +11,7 @@ public class Tick extends BukkitRunnable {
     private int seconds = 0;
     private int minutes = 0;
 
-    private boolean done = false;
+    private static boolean done = false;
 
     Main plugin;
     public Tick(Main plugin){
@@ -36,5 +36,8 @@ public class Tick extends BukkitRunnable {
 
         }
 
+    }
+    public static void reset(){
+        done=false;
     }
 }

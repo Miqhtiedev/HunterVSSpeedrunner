@@ -24,7 +24,7 @@ public class StartCommand implements CommandExecutor {
             return true;
         }
 
-        if(!(commandSender.hasPermission("huntervsspeedrunner.start"))){
+        if(!(commandSender.hasPermission("hvs.start"))){
             commandSender.sendMessage(ChatColor.RED + "Missing permissions for this command!");
             return true;
         }
@@ -51,7 +51,9 @@ public class StartCommand implements CommandExecutor {
         HVSManager.setHunterCanMove(false);
         HVSManager.setTimeStartedMilis(System.currentTimeMillis());
 
-        Bukkit.broadcastMessage(ChatColor.GREEN + "The HVS game has started!");
+        for(Player p : Bukkit.getOnlinePlayers()){
+            p.sendTitle(ChatColor.RED + "GAME STARTED!", ChatColor.YELLOW + "STARTED BY " + player.getDisplayName());
+        }
 
         Bukkit.dispatchCommand(commandSender, "advancement revoke @a everything");
 

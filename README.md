@@ -13,6 +13,8 @@ Listpeople: Lists all speed runners and hunters
 
 Start: Starts the game
 
+End: Force stops the game.
+
 Track: Command that hunters use when the game is started that displays the location of all speed runners.
 
 Teamates: Command that tells you all the locations of you teamates.

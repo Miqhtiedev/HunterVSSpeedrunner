@@ -26,6 +26,7 @@ public class Main extends JavaPlugin {
         new TeamatesCommand(this);
         new onePunchMan(this);
         new QuitTeamCommand(this);
+        new EndCommand(this);
 
         new MoveListener(this);
         new DeathListener(this);

@@ -1,6 +1,6 @@
 name: HunterVSSpeedrunner
 main: miqhtie.huntervsspeedrunner.Main
-version: 1.0.5
+version: 1.0.6
 
 author: Miqhtie
 description: A custom Hunter vs Speedrunner plugin
@@ -14,6 +14,8 @@ commands:
     description: Lists all Hunters/Speedrunners!
   start:
     description: Starts the game!
+  end:
+    description: Force stops the game.
   track:
     description: Tracks speedrunners if you are a hunter
   teamates:

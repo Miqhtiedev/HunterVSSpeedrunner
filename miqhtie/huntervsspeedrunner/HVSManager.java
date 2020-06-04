@@ -1,5 +1,6 @@
 package miqhtie.huntervsspeedrunner;
 
+import org.bukkit.World;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
@@ -64,6 +65,24 @@ public class HVSManager {
     }
 
 
+    /*
+    Reset
+     */
 
+    public static void reset(World world){
+        gameActive = false;
+        hunterCanMove = true;
+        onePunchMan = false;
+
+        timeStartedMilis = 0;
+
+        hunters.clear();
+        speedrunners.clear();
+        Playerhunters.clear();
+
+        Tick.reset();
+
+        world.getWorldBorder().reset();
+    }
 
 }
