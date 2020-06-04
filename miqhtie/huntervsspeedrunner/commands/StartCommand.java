@@ -52,7 +52,7 @@ public class StartCommand implements CommandExecutor {
         HVSManager.setTimeStartedMilis(System.currentTimeMillis());
 
         for(Player p : Bukkit.getOnlinePlayers()){
-            p.sendTitle(ChatColor.RED + "GAME STARTED!", ChatColor.YELLOW + "STARTED BY " + player.getDisplayName());
+            p.sendTitle(ChatColor.RED + "GAME STARTED!", ChatColor.YELLOW + "STARTED BY " + player.getDisplayName(), 1, 20, 1);
         }
 
         Bukkit.dispatchCommand(commandSender, "advancement revoke @a everything");

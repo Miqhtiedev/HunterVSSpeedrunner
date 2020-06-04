@@ -33,8 +33,10 @@ public class DeathListener implements Listener {
             Bukkit.broadcastMessage(ChatColor.RED + event.getEntity().getDisplayName() + " HAS BEEN MURDERED!");
 
             if(HVSManager.getSpeedrunners().size() == 0){
-                Bukkit.broadcastMessage(ChatColor.GREEN + "HUNTERS WIN! Disabling plugin!");
-                Bukkit.getPluginManager().disablePlugin(plugin);
+                for(Player p : Bukkit.getOnlinePlayers()){
+                    p.sendTitle(ChatColor.GREEN + "HUNTERS WIN!", "", 1 ,20, 1);
+                }
+                HVSManager.reset(event.getEntity().getWorld());
             }
         }
     }
